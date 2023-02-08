@@ -21,6 +21,7 @@
 	position: absolute;
 	bottom: -600px;
 	width: 2000px;
+	overflow: hidden;
 	z-index: 1;
 }
 
@@ -36,7 +37,6 @@
 	margin-left: auto;
 	margin-right: 74px;
 	position: relative;
-	width: 551px;
 }
 
 .banner__right .image img {

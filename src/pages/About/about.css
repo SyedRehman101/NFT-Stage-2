@@ -47,48 +47,39 @@
 }
 
 .about-left .images .img1 {
-	-webkit-animation: animate-5 15s linear 0s infinite;
-	animation: animate-5 15s linear 0s infinite;
-	bottom: -160px;
+	-webkit-animation: top-to-bottom 10s ease-in-out infinite;
+	animation: top-to-bottom 10s ease-in-out infinite;
+	position: absolute;
+	bottom: -25%;
 	height: 246px;
+	transform: translateX(-50%);
 	border-radius: 20%;
 	object-fit: cover;
-	right: 70px;
+	right: -20%;
 	width: 255px;
 	z-index: 4;
-	position: absolute;
 }
 
 .about .about-left .images .img3 {
 	border-radius: 20%;
 	position: absolute;
-	-webkit-animation: animate-3 15s linear 0s infinite;
-	animation: animate-3 15s linear 0s infinite;
-	bottom: -93px;
+	-webkit-animation: right-to-left 10s ease-in-out infinite;
+	animation: right-to-left 10s ease-in-out infinite;
+	bottom: -40%;
 	height: 222px;
-	left: -90px;
+	transform: translateY(-50%);
+	left: -20%;
 	object-fit: cover;
 	width: 222px;
 }
 
-.about .about-left .images .img4 {
-	animation: animate-2 15s linear 0s infinite;
-	height: 117px;
-	left: -160px;
-	object-fit: cover;
-	top: 100px;
-	border-radius: 20%;
-	position: absolute;
-	width: 121px;
-	z-index: 3;
-}
-
 .about .about-left .images .img5 {
-	-webkit-animation: animate-4 15s linear 0s infinite;
-	animation: animate-4 15s linear 0s infinite;
-	bottom: -89px;
+	-webkit-animation: right-to-left 10s ease-in-out infinite;
+	animation: right-to-left 10s ease-in-out infinite;
+	bottom: -25%;
 	height: 62px;
-	left: 150px;
+	left: 30%;
+	transform: translateY(-50%);
 	border-radius: 20%;
 	position: absolute;
 	object-fit: cover;
@@ -117,34 +108,6 @@
 	-webkit-background-clip: text;
 }
 
-.action-btn {
-	align-items: center;
-	-webkit-backdrop-filter: blur(4px);
-	backdrop-filter: blur(4px);
-	background: linear-gradient(
-		89.96deg,
-		hsla(0, 0%, 100%, 0.05) 0.03%,
-		hsla(0, 0%, 100%, 0.008) 49.67%,
-		hsla(0, 0%, 100%, 0.05) 99.96%
-	);
-	border: 1px solid hsla(0, 0%, 100%, 0.1);
-	border-radius: 10px;
-	display: inline-flex;
-	font-weight: 700;
-	justify-content: flex-start;
-	padding: 5px;
-}
-
-.action-btn span {
-	background: linear-gradient(264.28deg, #dec7ff -38.2%, #5c27fe 103.12%);
-	border-radius: 10px;
-	color: #fff;
-	padding: 14px 24px;
-	transition: all 0.3s ease-in-out;
-	overflow: hidden;
-	position: relative;
-}
-
 .about-blur {
 	background: radial-gradient(
 		34.98% 34.98% at 50% 50%,
@@ -158,6 +121,19 @@
 	bottom: -115%;
 	width: 1000px;
 	z-index: 1;
+}
+
+.about .about-left .images .img4 {
+	-webkit-animation: top-to-bottom 10s ease-in-out infinite;
+	animation: top-to-bottom 10s ease-in-out infinite;
+	position: absolute;
+	width: 117px;
+	height: 117px;
+	border-radius: 20%;
+	top: 5%;
+	left: -15%;
+	transform: translateX(-50%);
+	z-index: 3;
 }
 
 @media (min-width: 1024px) {

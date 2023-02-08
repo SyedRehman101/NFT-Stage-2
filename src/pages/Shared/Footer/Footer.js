@@ -7,7 +7,7 @@ import logo from '../../../assets/Images/logo.png'
 const Footer = () => {
   const date = new Date();
   return (
-    <footer className="lg:max-w-screen-xl w-full mx-auto py-16">
+    <footer className="lg:max-w-screen-lg xl:max-w-screen-xl w-full mx-auto py-16">
 
       <Create></Create>
 

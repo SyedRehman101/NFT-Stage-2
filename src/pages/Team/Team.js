@@ -15,7 +15,7 @@ import { Autoplay } from 'swiper';
 const Team = () => {
   return (
     <section className='team'>
-      <div className='lg:max-w-screen-xl mx-auto w-full p-4'>
+      <div className='lg:max-w-screen-lg xl:max-w-screen-xl w-full mx-auto p-4'>
         <div class="block-text text-center">
           <h6 class="sub-heading"><span>Team Members</span></h6>
           <h3 class="heading lg:text-4xl text-2xl text-base-100 font-bold leading-normal">Our Amazing Team Members</h3>

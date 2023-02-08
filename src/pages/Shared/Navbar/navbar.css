@@ -50,6 +50,10 @@
 	padding: 10px 16px;
 }
 
+.downloadBtnContainer .active {
+	color: var(--primaryG) !important;
+}
+
 @media (max-width: 950px) {
 	.home-large-navLinks,
 	.home-large-connectWalletBtn {
@@ -58,9 +62,7 @@
 	.hamburger {
 		display: block;
 	}
-}
 
-@media (max-width: 1140px) {
 	.downloadBtnContainer {
 		display: none;
 	}

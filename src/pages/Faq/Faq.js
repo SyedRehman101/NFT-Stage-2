@@ -1,14 +1,12 @@
 import React from 'react';
 import './faq.css'
-import { NavLink, Outlet, useLocation } from 'react-router-dom';
+import { NavLink, Outlet } from 'react-router-dom';
 import { Fade } from 'react-reveal';
 
 const Faq = () => {
-  const location = useLocation();
-  const path = location.pathname.replace('/', '');
   return (
     <section className="faq">
-      <div className="lg:max-w-screen-xl w-full mx-auto p-4">
+      <div className="lg:max-w-screen-lg xl:max-w-screen-xl w-full mx-auto p-4">
         <div className='flex justify-center items-center'>
           <Fade top duration="2000">
             <div className='block-text text-center'>

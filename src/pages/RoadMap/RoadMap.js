@@ -14,7 +14,7 @@ const RoadMap = () => {
     <section className='roadmap'>
       <img src={roadmap} alt="Road Map bg" className='img-line' />
       <div className='rm-shape'></div>
-      <div className='lg:max-w-screen-xl w-ful  mx-auto p-4 z-50 relative'>
+      <div className='lg:max-w-screen-lg xl:max-w-screen-xl w-full mx-auto p-4 z-50 relative'>
         <div class="block-text text-center">
           <h6 class="sub-heading"><span>Road Map</span></h6>
           <h3 class="heading lg:text-4xl text-2xl text-base-100 font-bold leading-normal">The Journey of Laaverse</h3>

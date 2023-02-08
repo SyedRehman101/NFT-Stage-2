@@ -16,10 +16,10 @@ const About = () => {
   return (
     <section id='about' className='about lg:py-28 py-8'>
       <div className="ab-shape"></div>
-      <div className='lg:max-w-screen-xl mx-auto w-full lg:px-20 px-4 relative z-50'>
+      <div className='lg:max-w-screen-lg xl:max-w-screen-xl w-full mx-auto xl:px-20 px-4 relative z-50'>
         <div className="grid lg:grid-cols-2 grid-cols-1">
           <div className='about-left'>
-            <div className="images">
+            <div className="images relative">
               <img src={about_main} alt="" className="img2" />
               <img src={img1} alt="" className="img1" />
               <img src={img3} alt="" className="img3" />
@@ -28,7 +28,7 @@ const About = () => {
             </div>
           </div>
           <div className="about-right">
-            <div className="content">
+            <div className="content text-center lg:text-left">
               <h4 className="sub-heading"><span>Own NFTs</span></h4>
               <h3 className="heading lg:text-6xl text-2xl text-base-100 font-bold leading-8">Own & Develop Your Land</h3>
               <p className='text-base-100'>Cyfonii is the premier marketplace for nifties, which are digital items you can truly own for yourself</p>

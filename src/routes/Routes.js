@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../layout/Main";
+import Play from "../layout/Play";
 import AboutPage from "../pages/About/AboutPage";
 import Dao from "../pages/Dao/Dao";
 import Collection from "../pages/Faq/Collection";
@@ -9,6 +10,7 @@ import FaqsPage from "../pages/Faq/FaqsPage";
 import NftToken from "../pages/Faq/NftToken";
 import Home from "../pages/Home/Home";
 import NftMarketPage from "../pages/NftMarket/NftMarketPage";
+import PlayNow from "../pages/PlayNow/PlayNow";
 import RoadMap from "../pages/RoadMap/RoadMap";
 import Staking from "../pages/Staking/Staking";
 import Team from "../pages/Team/Team";
@@ -95,6 +97,10 @@ const Router = createBrowserRouter([
         ]
       }
     ]
+  },
+  {
+    path: 'playnow',
+    element: <Play></Play>
   }
 ])
 

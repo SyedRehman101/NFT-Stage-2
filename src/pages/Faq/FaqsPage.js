@@ -7,7 +7,6 @@ import { NavLink } from 'react-router-dom';
 const FaqsPage = () => {
   const location = useLocation();
   const path = location.pathname;
-  console.log(path)
   return (
     <section className="faq">
       <div className="lg:max-w-screen-xl w-full mx-auto p-4">
