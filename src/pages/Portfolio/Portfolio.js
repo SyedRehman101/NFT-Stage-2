@@ -19,7 +19,7 @@ const Portfolio = () => {
           <h3 class="heading lg:text-4xl text-2xl text-base-100 font-bold leading-normal">Unleash Your Inner Creator</h3>
         </div>
 
-        <div className="grid lg:grid-cols-2 grid-cols-1">
+        <div className="grid lg:grid-cols-2 grid-cols-1 items-center">
           <div className="portfolio__left">
             <Fade duration="3000">
               <PortfolioBox
@@ -60,8 +60,8 @@ const Portfolio = () => {
           </div>
 
           <div className="portfolio__right">
-            <div className="image">
-              <img src={protfolio} className="port_img" alt="Portfolio Banner" />
+            <div className="p_image lg:w-[500px] w-full">
+              <img src={protfolio} alt="Portfolio Banner" />
             </div>
           </div>
         </div>
