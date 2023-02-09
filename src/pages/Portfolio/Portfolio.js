@@ -14,12 +14,12 @@ const Portfolio = () => {
     <section className='portfolio'>
       <div className="pf-shape"></div>
       <div className='lg:max-w-screen-lg xl:max-w-screen-xl w-full mx-auto p-4 z-50 relative'>
-        <div class="block-text text-center">
+        <div class="block-text text-center mb-10">
           <h6 class="sub-heading"><span> Laaverse Creator Studio</span></h6>
           <h3 class="heading lg:text-4xl text-2xl text-base-100 font-bold leading-normal">Unleash Your Inner Creator</h3>
         </div>
 
-        <div className="grid lg:grid-cols-2 grid-cols-1 mt-20">
+        <div className="grid lg:grid-cols-2 grid-cols-1">
           <div className="portfolio__left">
             <Fade duration="3000">
               <PortfolioBox
@@ -57,7 +57,6 @@ const Portfolio = () => {
                 step="1"
               ></PortfolioBox>
             </Fade>
-
           </div>
 
           <div className="portfolio__right">

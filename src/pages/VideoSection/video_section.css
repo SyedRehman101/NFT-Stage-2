@@ -18,8 +18,35 @@
 	border: 2px solid var(--primaryG);
 }
 
-@media (max-width: 526px) {
+.video {
+	margin-top: 100px;
+}
+
+@media only screen and (max-width: 576px) {
 	.slider_main:hover .slider-thumbs img {
 		transform: translateX(120%);
+	}
+
+	.video {
+		margin-top: 0px;
+	}
+
+	.slider_main img {
+		width: 470px;
+		height: 276px;
+	}
+
+	.slider_content {
+		bottom: 10px;
+		left: 10px;
+	}
+
+	.slider-thumbs {
+		width: 80px;
+		right: -88px;
+	}
+
+	.slider-thumbs img {
+		margin-bottom: 6px;
 	}
 }

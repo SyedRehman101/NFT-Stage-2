@@ -25,12 +25,12 @@ const Footer = () => {
       </div>
 
       <div className="grid lg:grid-cols-5 grid-cols-1 lg:gap-4 lg:justify-between justify-center items-center">
-        <div className='col-span-1 w-[350px] rounded-md px-12 py-4 text-base flex items-center justify-center'>
+        <div className='col-span-1 rounded-md px-12 py-4 text-base flex items-center justify-center'>
           <img src={logo} alt="company log" />
         </div>
 
         <div className='text-center col-span-3 py-6'>
-          <ul class="flex flex-col lg:flex-row text-base-100 gap-8 justify-center">
+          <ul class="flex lg:flex-row text-base-100 gap-8 justify-center">
             <li><a href="/">Home</a></li>
             <li><a href="/nfts">Explore</a></li>
             <li><a href="/about">About</a></li>

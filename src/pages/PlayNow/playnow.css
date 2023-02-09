@@ -1,8 +1,8 @@
-.title {
+.play_title {
 	position: relative;
 }
 
-.title::after {
+.play_title::after {
 	position: absolute;
 	content: "";
 	height: 2px;
@@ -12,11 +12,11 @@
 	background-color: var(--primaryDark);
 }
 
-.title span {
+.play_title span {
 	position: relative;
 }
 
-.title span::after {
+.play_title span::after {
 	position: absolute;
 	content: "";
 	width: 2px;
@@ -85,4 +85,26 @@
 	background-color: var(--pure);
 	bottom: -10px;
 	left: -30px;
+}
+
+@media (min-width: 1024px) {
+	.top_right {
+		right: 20px;
+		top: -10px;
+	}
+
+	.gitls_char {
+		bottom: -95px;
+		height: 400px;
+	}
+
+	.content_bottom {
+		right: 20px;
+		bottom: -95px;
+	}
+
+	.content_top {
+		right: 20px;
+		top: 75px;
+	}
 }

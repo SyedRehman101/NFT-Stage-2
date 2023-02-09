@@ -2,7 +2,6 @@ import React from 'react';
 import bg from '../../assets/Images/home-banner.jpeg';
 import Owner from '../../assets/Images/cartoon.png';
 import ethereum from '../../assets/Images/ethereum.png';
-import BlueBlur from '../../blur/BlueBlur';
 import './Hero.css';
 import { useNavigate } from 'react-router';
 
@@ -22,10 +21,9 @@ const Hero = () => {
           <button onClick={handleNavigate} className="btn btn-outline hero-btn text-base-100 mt-5 btn-sm lg:btn-lg hover:bg-primaryHover hover:border-pure">Let’s Get Started</button>
         </div>
 
-        <div className="banner__right lg:max-w-screen-xl">
+        <div className="banner__right">
           <div className='image'>
-            <img className='w-full lg:max-w-screen-xl rounded-3xl' src={bg} alt="Home Hero" />
-            <BlueBlur className="home-blur"></BlueBlur>
+            <img className='lg:max-w-screen-xl lg:rounded-3xl rounded' src={bg} alt="Home Hero" />
           </div>
 
           <div className='price'>

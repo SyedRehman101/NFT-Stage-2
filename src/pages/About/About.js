@@ -18,7 +18,7 @@ const About = () => {
       <div className="ab-shape"></div>
       <div className='lg:max-w-screen-lg xl:max-w-screen-xl w-full mx-auto xl:px-20 px-4 relative z-50'>
         <div className="grid lg:grid-cols-2 grid-cols-1">
-          <div className='about-left'>
+          <div className='about_left'>
             <div className="images relative">
               <img src={about_main} alt="" className="img2" />
               <img src={img1} alt="" className="img1" />

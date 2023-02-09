@@ -18,7 +18,7 @@
 	z-index: 1;
 }
 
-.about .about-left .images:after {
+.about .about_left .images:after {
 	background: hsla(0, 0%, 100%, 0.1);
 	border-radius: 110px;
 	content: "";
@@ -32,11 +32,11 @@
 	z-index: 1;
 }
 
-.about .about-left .images {
+.about .about_left .images {
 	position: relative;
 }
 
-.about .about-left .images .img2 {
+.about .about_left .images .img2 {
 	border-radius: 110px;
 	height: 533px;
 	margin: 60px 0 0 -4px;
@@ -46,7 +46,7 @@
 	z-index: 3;
 }
 
-.about-left .images .img1 {
+.about_left .images .img1 {
 	-webkit-animation: top-to-bottom 10s ease-in-out infinite;
 	animation: top-to-bottom 10s ease-in-out infinite;
 	position: absolute;
@@ -60,7 +60,7 @@
 	z-index: 4;
 }
 
-.about .about-left .images .img3 {
+.about .about_left .images .img3 {
 	border-radius: 20%;
 	position: absolute;
 	-webkit-animation: right-to-left 10s ease-in-out infinite;
@@ -73,7 +73,7 @@
 	width: 222px;
 }
 
-.about .about-left .images .img5 {
+.about .about_left .images .img5 {
 	-webkit-animation: right-to-left 10s ease-in-out infinite;
 	animation: right-to-left 10s ease-in-out infinite;
 	bottom: -25%;
@@ -123,7 +123,7 @@
 	z-index: 1;
 }
 
-.about .about-left .images .img4 {
+.about .about_left .images .img4 {
 	-webkit-animation: top-to-bottom 10s ease-in-out infinite;
 	animation: top-to-bottom 10s ease-in-out infinite;
 	position: absolute;
@@ -143,14 +143,14 @@
 }
 
 @media only screen and (max-width: 767px) {
-	.about .about-left .images .img2 {
+	.about .about_left .images .img2 {
 		border-radius: 35px;
 		height: 415px;
 		margin: 0px 0 0 -4px;
 		z-index: 3;
 	}
 
-	.about .about-left .images:after {
+	.about .about_left .images:after {
 		border-radius: 64px;
 		height: 450px;
 		left: -31px;
@@ -163,13 +163,13 @@
 		width: 100%;
 	}
 
-	.about-left .images .img1 {
+	.about_left .images .img1 {
 		width: 200px;
 		height: 200px;
 		right: -5px;
 	}
 
-	.about .about-left .images .img3 {
+	.about .about_left .images .img3 {
 		border-radius: 20%;
 		position: absolute;
 		animation: animate-3 15s linear 0s infinite;
@@ -182,5 +182,33 @@
 
 	.about-right {
 		padding-top: 200px;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.about_left .images {
+		width: 450px;
+		margin: 0 auto;
+	}
+
+	.about .about_left .images:after {
+		border-radius: 30px;
+		left: 50px;
+		top: -20px;
+	}
+
+	.about .about_left .images .img4 {
+		top: -8%;
+		left: 2%;
+	}
+
+	.about .about_left .images .img3 {
+		bottom: -126px;
+		left: -45px;
+	}
+
+	.about_left .images .img1 {
+		bottom: -18%;
+		right: -20%;
 	}
 }

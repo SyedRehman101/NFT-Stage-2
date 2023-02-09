@@ -56,3 +56,9 @@
 .projectSlider .swiper-pagination-bullet-active {
 	background-color: var(--primaryG) !important;
 }
+
+@media only screen and (max-width: 576px) {
+	.project {
+		margin-top: 480px;
+	}
+}

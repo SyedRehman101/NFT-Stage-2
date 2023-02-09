@@ -19,7 +19,6 @@ const Projects = () => {
         </div>
 
         <div className='mt-8'>
-
           <Swiper
             slidesPerView={4}
             spaceBetween={30}

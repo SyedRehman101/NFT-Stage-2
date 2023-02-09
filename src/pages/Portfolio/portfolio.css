@@ -50,26 +50,18 @@
 	padding-left: 16px;
 }
 
-.portfolio .portfolio__right .image {
-	-webkit-animation: animate-1 15s linear 0s infinite;
-	animation: animate-1 15s linear 0s infinite;
-}
-
 .portfolio-box:hover {
 	box-shadow: 3px 3px 2px 2px var(--primary);
 }
 
-.image {
-	position: relative;
-	top: 50%;
-}
-
 .port_img {
 	animation: right-to-left-port 10s ease-in-out infinite;
+	right: 0;
 	position: absolute;
-	left: 0;
+	top: 50%;
 	transform: translateY(-50%);
 	z-index: 3;
+	width: 50%;
 }
 
 @keyframes right-to-left-port {
@@ -78,5 +70,12 @@
 	}
 	50% {
 		transform: translateX(5%) translateY(-50%);
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.port_img {
+		position: absolute;
+		bottom: -85%;
 	}
 }
