@@ -1,0 +1,88 @@
+.title {
+	position: relative;
+}
+
+.title::after {
+	position: absolute;
+	content: "";
+	height: 2px;
+	width: 100%;
+	left: 0;
+	bottom: -4px;
+	background-color: var(--primaryDark);
+}
+
+.title span {
+	position: relative;
+}
+
+.title span::after {
+	position: absolute;
+	content: "";
+	width: 2px;
+	height: 100%;
+	right: -12px;
+	bottom: 0;
+	background-color: var(--pure);
+}
+
+.gitls_char {
+	position: absolute;
+	bottom: -140px;
+	right: -70px;
+	height: 450px;
+}
+.top_right {
+	position: absolute;
+	right: 40px;
+	top: -10px;
+}
+.content_bottom {
+	position: absolute;
+	right: 40px;
+	bottom: -140px;
+}
+
+.content_top {
+	position: absolute;
+	right: 40px;
+	top: 75px;
+}
+
+.circle_star {
+	position: relative;
+}
+
+.circle_star::after {
+	position: absolute;
+	content: "";
+	height: 2px;
+	width: 110%;
+	background-color: var(--pure);
+	bottom: -9px;
+	left: 0;
+}
+
+.focus {
+	position: relative;
+}
+
+.focus::after {
+	position: absolute;
+	content: "";
+	height: 150%;
+	width: 2px;
+	background-color: var(--pure);
+	bottom: -10px;
+	right: -30px;
+}
+
+.focus::before {
+	position: absolute;
+	content: "";
+	height: 150%;
+	width: 2px;
+	background-color: var(--pure);
+	bottom: -10px;
+	left: -30px;
+}
