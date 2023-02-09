@@ -147,9 +147,9 @@
 	}
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 425px) {
 	.banner__right > .image {
-		width: 450px;
+		width: 380px;
 		margin: 0 auto;
 		padding: 20px 0;
 	}
@@ -173,6 +173,6 @@
 	}
 
 	.banner__right .owner {
-		left: 28%;
+		left: 35%;
 	}
 }

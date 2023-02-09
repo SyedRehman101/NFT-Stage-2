@@ -11,7 +11,7 @@ const Footer = () => {
 
       <Create></Create>
 
-      <div className="footer__main mt-20">
+      <div className="footer__main mt-20 px-4">
         <div class="block-text text-center">
           <h3 class="heading text-4xl text-base-100 font-bold">Get Newsletter</h3>
           <p className='text-base-100 py-4'>Get udpated with news, tips &amp; tricks</p>
@@ -29,8 +29,8 @@ const Footer = () => {
           <img src={logo} alt="company log" />
         </div>
 
-        <div className='text-center col-span-3 py-6'>
-          <ul class="flex lg:flex-row text-base-100 gap-8 justify-center">
+        <div className='text-center col-span-3 py-6 px-4'>
+          <ul class="flex lg:flex-row flex-wrap text-base-100 lg:gap-8 gap-4 justify-center">
             <li><a href="/">Home</a></li>
             <li><a href="/nfts">Explore</a></li>
             <li><a href="/about">About</a></li>

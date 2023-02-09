@@ -56,12 +56,8 @@
 
 .port_img {
 	animation: right-to-left-port 10s ease-in-out infinite;
-	right: 0;
-	position: absolute;
-	top: 50%;
 	transform: translateY(-50%);
 	z-index: 3;
-	width: 50%;
 }
 
 @keyframes right-to-left-port {
@@ -73,9 +69,10 @@
 	}
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 425px) {
 	.port_img {
 		position: absolute;
-		bottom: -85%;
+		bottom: -58%;
+		left: 0;
 	}
 }
