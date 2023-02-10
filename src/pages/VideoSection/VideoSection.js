@@ -21,12 +21,18 @@ const VideoSection = () => {
     },
     {
       id: 2,
-      image: thumb2,
+      image: thumb3,
       text: "Text for thumbnail 2",
       buttonText: "Button 2"
     },
     {
       id: 3,
+      image: thumb2,
+      text: "Text for thumbnail 3",
+      buttonText: "Button 3"
+    },
+    {
+      id: 4,
       image: thumb3,
       text: "Text for thumbnail 3",
       buttonText: "Button 3"
@@ -46,17 +52,17 @@ const VideoSection = () => {
           <p class="text-base-100 pt-4">Cyfonii is the premier marketplace for nifties, which are digital items you can truly own for yourself</p>
         </div>
         <div className="mt-10">
-          <div className='video-main p-8 flex justify-center items-center relative'>
+          <div className='video_main p-8 flex justify-center items-center'>
             <img src={vidoeBg} alt="" />
-            <div className='slider absolute lg:top-[61px] top-[43px] lg:left-[40px] xl:left-[128px]'>
-              <div className='slider_main lg:w-[996px] lg:h-[670px] w-full'>
-                <img className='lg:w-[908px] xl:w-[990px] lg:h-[522px] xl:h-[574px]' style={{ clipPath: `polygon(3% 0, 98% 0, 100% 4%, 100% 96%, 97% 100%, 3% 100%, 0 95%, 0 6%)` }} src={images[activeIndex].image} alt="slider" />
+            <div className='slider'>
+              <div className='slider_main'>
+                <img className='' style={{ clipPath: `polygon(3% 0, 98% 0, 100% 4%, 100% 96%, 97% 100%, 3% 100%, 0 95%, 0 6%)` }} src={images[activeIndex].image} alt="slider" />
                 <div className='absolute bottom-[200px] left-[50px] slider_content'>
                   <p className='text-pure lg:text-3xl text-lg font-bold'>{images[activeIndex].text}</p>
                   <button className='btn btn-primary mt-4 lg:btn-lg  btn-sm'>{images[activeIndex].buttonText}</button>
                 </div>
               </div>
-              <div className="slider-thumbs absolute lg:right-[-150px] right-[-51px] top-[25%]">
+              <div className="slider_thumbs">
                 {images.map((item, index) => (
                   <div
                     key={item.id}

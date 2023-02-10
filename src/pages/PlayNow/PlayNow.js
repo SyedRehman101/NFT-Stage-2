@@ -42,7 +42,7 @@ const PlayNow = () => {
               <p className='hover:text-primaryG text-pure lg:text-xl text-md font-bold mb-2 flex items-center'><img className='mr-3' src={bag} alt="" /><a href="/nftmarket">Market place</a></p>
             </div>
 
-            <div className='absolute top-0 -right-44'>
+            <div className='absolute top-10 -right-44'>
               <CountdownTimer targetDate={dateTimeAfterSevenDays} />
             </div>
 

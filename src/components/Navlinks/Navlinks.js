@@ -5,7 +5,7 @@ import { BsFillCaretDownFill, BsGithub, BsGoogle, BsLinkedin, BsPinterest, BsSky
 
 const Navlinks = () => {
   return (
-    <ul className='w-full flex lg:flex-row flex-col lg:items-center lg:gap-3 xl:gap-6 text-pure text-semibold'>
+    <ul className='w-full flex lg:flex-row flex-col lg:items-center lg:gap-4 text-pure text-semibold'>
       <li>
         <NavLink to="/" className="uppercase xl:text-md text-sm">Home</NavLink>
       </li>

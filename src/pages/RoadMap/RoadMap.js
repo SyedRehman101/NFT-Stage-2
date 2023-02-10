@@ -61,7 +61,7 @@ const RoadMap = () => {
         </Fade>
 
         <div class="button">
-          <button onClick={handleNavigate} className='btn btn-primary btn-lg hover:bg-primaryHover hover:text-pure hover:border-pure'><span>Claim NFT Land</span></button>
+          <button onClick={handleNavigate} className='btn btn-primary lg:btn-lg btn-md hover:bg-primaryHover hover:text-pure hover:border-pure'><span>Claim NFT Land</span></button>
 
         </div>
       </div>

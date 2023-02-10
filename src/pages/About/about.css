@@ -20,15 +20,14 @@
 
 .about .about_left .images:after {
 	background: hsla(0, 0%, 100%, 0.1);
-	border-radius: 110px;
+	border-radius: 70px;
 	content: "";
-	height: 533px;
+	height: 505px;
 	position: absolute;
-	left: 10px;
+	left: 22px;
 	top: 10px;
-	-webkit-transform: rotate(10deg);
-	transform: rotate(10deg);
-	width: 420px;
+	transform: rotate(11deg);
+	width: 435px;
 	z-index: 1;
 }
 
@@ -37,53 +36,51 @@
 }
 
 .about .about_left .images .img2 {
-	border-radius: 110px;
-	height: 533px;
+	border-radius: 70px;
+	height: 520px;
 	margin: 60px 0 0 -4px;
 	object-fit: cover;
 	position: relative;
-	width: 420px;
+	width: 100%;
 	z-index: 3;
+	padding: 25px;
 }
 
 .about_left .images .img1 {
-	-webkit-animation: top-to-bottom 10s ease-in-out infinite;
-	animation: top-to-bottom 10s ease-in-out infinite;
 	position: absolute;
-	bottom: -25%;
-	height: 246px;
-	transform: translateX(-50%);
+	bottom: -8%;
+	right: -20%;
+	width: 180px;
+	height: 180px;
 	border-radius: 20%;
 	object-fit: cover;
-	right: -20%;
-	width: 255px;
+	animation: top-to-bottom 10s ease-in-out infinite;
+	transform: translateX(-50%);
 	z-index: 4;
 }
 
 .about .about_left .images .img3 {
-	border-radius: 20%;
 	position: absolute;
-	-webkit-animation: right-to-left 10s ease-in-out infinite;
-	animation: right-to-left 10s ease-in-out infinite;
-	bottom: -40%;
-	height: 222px;
-	transform: translateY(-50%);
-	left: -20%;
+	bottom: -25%;
+	left: -5%;
+	width: 160px;
+	height: 160px;
+	border-radius: 20%;
 	object-fit: cover;
-	width: 222px;
+	animation: right-to-left 10s ease-in-out infinite;
+	transform: translateY(-50%);
 }
 
 .about .about_left .images .img5 {
-	-webkit-animation: right-to-left 10s ease-in-out infinite;
-	animation: right-to-left 10s ease-in-out infinite;
-	bottom: -25%;
+	width: 65px;
 	height: 62px;
-	left: 30%;
-	transform: translateY(-50%);
 	border-radius: 20%;
 	position: absolute;
+	bottom: -15%;
+	left: 38%;
 	object-fit: cover;
-	width: 65px;
+	animation: right-to-left 10s ease-in-out infinite;
+	transform: translateY(-50%);
 }
 
 .sub-heading {
@@ -124,91 +121,89 @@
 }
 
 .about .about_left .images .img4 {
-	-webkit-animation: top-to-bottom 10s ease-in-out infinite;
-	animation: top-to-bottom 10s ease-in-out infinite;
 	position: absolute;
+	top: 0%;
+	left: 10%;
 	width: 117px;
 	height: 117px;
 	border-radius: 20%;
-	top: 5%;
-	left: -15%;
+	animation: top-to-bottom 10s ease-in-out infinite;
 	transform: translateX(-50%);
 	z-index: 3;
 }
 
-@media (min-width: 1024px) {
-	.lg\:text-6xl {
-		line-height: 1.4;
+@media only screen and (max-width: 576px) {
+	.about_left .images {
+		width: 100%;
+		margin: 0 auto;
 	}
-}
 
-@media only screen and (max-width: 767px) {
 	.about .about_left .images .img2 {
-		border-radius: 35px;
-		height: 415px;
-		margin: 0px 0 0 -4px;
+		height: 422px;
+		padding: unset;
+	}
+
+	.about .about_left .images .img2 {
+		position: relative;
+		width: 100%;
+		border-radius: 30px;
 		z-index: 3;
 	}
 
 	.about .about_left .images:after {
-		border-radius: 64px;
-		height: 450px;
-		left: -31px;
-		top: -19px;
-		transform: rotate(0deg);
-		width: 384px;
-	}
-
-	.img2 {
+		left: 0px;
+		top: -8px;
 		width: 100%;
-	}
-
-	.about_left .images .img1 {
-		width: 200px;
-		height: 200px;
-		right: -5px;
-	}
-
-	.about .about_left .images .img3 {
-		border-radius: 20%;
-		position: absolute;
-		animation: animate-3 15s linear 0s infinite;
-		bottom: -93px;
-		height: 150px;
-		left: -20px;
-		object-fit: cover;
-		width: 150px;
-	}
-
-	.about-right {
-		padding-top: 200px;
-	}
-}
-
-@media only screen and (max-width: 425px) {
-	.about_left .images {
-		width: 380px;
-		margin: 0 auto;
-	}
-
-	.about .about_left .images:after {
+		height: 430px;
 		border-radius: 20px;
-		left: 10px;
-		top: -20px;
+		transform: rotate(7deg);
 	}
 
 	.about .about_left .images .img4 {
 		top: -8%;
-		left: 10%;
+		left: 12%;
+		width: 100px;
+		height: 100px;
 	}
 
 	.about .about_left .images .img3 {
-		bottom: -126px;
-		left: -20px;
+		bottom: -116px;
+		left: -26px;
+		width: 110px;
+		height: 110px;
+		z-index: 2;
 	}
 
 	.about_left .images .img1 {
-		bottom: -18%;
+		bottom: -21%;
 		right: -30%;
+		width: 140px;
+		height: 140px;
+	}
+
+	.about .about_left .images .img5 {
+		left: 36%;
+		bottom: -24%;
+	}
+
+	.about-right {
+		margin-top: -50px;
+	}
+
+	.about {
+		margin-bottom: 120px;
+	}
+}
+
+@media (min-width: 1280px) {
+	.about .about_left .images .img2 {
+		height: 570px;
+	}
+
+	.about .about_left .images:after {
+		height: 570px;
+		left: 16px;
+		top: 0px;
+		width: 470px;
 	}
 }

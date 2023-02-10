@@ -32,10 +32,10 @@ const Brand = () => {
               slidesPerView: 3
             },
             650: {
-              slidesPerView: 2
+              slidesPerView: 3
             },
             200: {
-              slidesPerView: 1
+              slidesPerView: 2
             }
           }}
         >

@@ -28,7 +28,7 @@ const NftMarketPage = () => {
             <div className="lg:col-span-2">
               <form action="" className="form">
                 <div className="filter-by-search">
-                  <select className="select item-category-select">
+                  <select className="select item-category-select max-w-xs w-full">
                     <option disabled selected>
                       Select Category
                     </option>
@@ -61,7 +61,7 @@ const NftMarketPage = () => {
           </div>
         </div>
 
-        <div className="grid lg:grid-cols-4 grid-cols-1 gap-6 mt-12 relative">
+        <div className="grid lg:grid-cols-3 xl:grid-cols-4 grid-cols-1 gap-6 mt-12 relative">
           <img src={lineBg} alt="" className='mark-img-line' />
           {
             nft.map(item => <NftCard

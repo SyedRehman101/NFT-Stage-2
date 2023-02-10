@@ -4,8 +4,8 @@ const DateTimeDisplay = ({ value, type }) => {
 
   return (
     <div className='countdown_block'>
-      <p>{value}</p>
-      <span>{type}</span>
+      <p className='text-5xl'>{value}</p>
+      <span className='text-md'>{type}</span>
     </div>
   );
 };

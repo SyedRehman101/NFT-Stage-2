@@ -191,24 +191,8 @@
 	z-index: 0;
 }
 
-@media only screen and (max-width: 767px) {
-	.filter-by-search {
-		display: inherit;
-	}
-
-	.filter-search-input {
-		margin-top: 20px;
-	}
-
-	.filter-search-input input {
-		border-radius: 10px;
-	}
-
-	.item-category-select {
-		border-radius: 10px;
-	}
-
+@media only screen and (min-width: 1024px) {
 	.select-category-title {
-		width: 50%;
+		width: 60%;
 	}
 }

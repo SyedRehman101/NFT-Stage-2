@@ -108,3 +108,17 @@
 		top: 75px;
 	}
 }
+
+@media (min-width: 1280px) {
+	.circle_star::after {
+		width: 107%;
+	}
+
+	.focus::after {
+		right: -13px;
+	}
+
+	.focus::before {
+		left: -13px;
+	}
+}

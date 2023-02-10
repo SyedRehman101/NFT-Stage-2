@@ -4,18 +4,14 @@ import './style.css';
 
 const ShowCounter = ({ days, hours, minutes, seconds }) => {
   return (
-    <div className="show-counter">
-      <a
-        href="https://tapasadhikary.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="countdown-link"
-      >
-        <DateTimeDisplay value={days} type={'Days'} />
-        <DateTimeDisplay value={hours} type={'Hours'} />
-        <DateTimeDisplay value={minutes} type={'Mins'} />
-        <DateTimeDisplay value={seconds} type={'Seconds'} />
-      </a>
+    <div className="show_counter">
+      <DateTimeDisplay value={days} type={'Days'} />
+      <p className="text-7xl text-pure px-2">.</p>
+      <DateTimeDisplay value={hours} type={'Hours'} />
+      <p className="text-7xl text-pure px-2">.</p>
+      <DateTimeDisplay value={minutes} type={'Mins'} />
+      <p className="text-7xl text-pure px-2">.</p>
+      <DateTimeDisplay value={seconds} type={'Seconds'} />
     </div>
   );
 };

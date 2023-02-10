@@ -17,7 +17,7 @@ const Hero = () => {
       <div className="lg:max-w-screen-lg xl:max-w-screen-xl w-full mx-auto grid lg:grid-cols-2 grid-cols-1 lg:p-20 items-center z-50 relative">
         <div className="content text-center lg:text-left mt-20 lg:mt-0">
           <h1 className="lg:text-2xl text-sm font-md text-secondary">Welcome to the Laaverse</h1>
-          <p className="text-5xl lg:text-7xl font-bold text-base-100 leading-normal here-title">A Virtual World <br /><span className='text-secondary'>of Endless</span> Possibilities</p>
+          <p className="text-5xl lg:text-6xl xl:text-7xl font-bold text-base-100 leading-normal here-title">A Virtual World <br /><span className='text-secondary'>of Endless</span> Possibilities</p>
           <button onClick={handleNavigate} className="btn btn-outline hero-btn text-base-100 mt-5 btn-sm lg:btn-lg hover:bg-primaryHover hover:border-pure">Let’s Get Started</button>
         </div>
 
@@ -41,7 +41,7 @@ const Hero = () => {
               <img src={Owner} alt="owner" />
             </div>
             <div className='content'>
-              <h2 className='text-lg font-bold'>Leslie Alexander</h2>
+              <h2 className='lg:text-lg text-sm font-bold'>Leslie Alexander</h2>
               <p>@leslie754</p>
             </div>
           </div>

@@ -15,6 +15,9 @@ import PlayNow from "../pages/PlayNow/PlayNow";
 import RoadMap from "../pages/RoadMap/RoadMap";
 import Staking from "../pages/Staking/Staking";
 import Team from "../pages/Team/Team";
+
+
+
 const Router = createBrowserRouter([
   {
     path: '/',
