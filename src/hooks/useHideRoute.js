@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
 
-const HideRoute = ({ component: Component, ...rest }) => (
+const useHideRoute = ({ component: Component, ...rest }) => {
   <Route
     {...rest}
     render={props =>
@@ -12,13 +12,13 @@ const HideRoute = ({ component: Component, ...rest }) => (
       )
     }
   />
-);
+};
 
-function isMobileDevice() {
+const isMobileDevice = () => {
   return (
     typeof window.orientation !== 'undefined' ||
     navigator.userAgent.indexOf('IEMobile') !== -1
   );
 }
 
-export default HideRoute;
+export default useHideRoute;

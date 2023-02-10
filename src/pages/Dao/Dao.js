@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import doa from '../../assets/Images/doa_main.jpeg';
 import { BiSort } from "react-icons/bi";
+import './dao.css'
 const Dao = () => {
   const [swap, setSwap] = useState(false);
 
@@ -15,13 +16,13 @@ const Dao = () => {
 
 
   return (
-    <section className='dao mt-20'>
-      <div className="lg:max-w-screen-xl w-full mx-auto">
-        <div className="grid lg:grid-cols-3 grid-cols-1 gap-6 bg-slate-500 mx-auto rounded-lg p-4 h-[430px]">
+    <section className='dao lg:mt-20'>
+      <div className="lg:max-w-screen-xl w-full mx-auto px-4">
+        <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-6 bg-slate-500 mx-auto rounded-lg lg:p-4 lg:h-[430px] h-[400px]">
           <div className="col-span-2 w-full h-[400px]">
-            <img className='w-full rounded-md h-[400px]' src={doa} alt="" />
+            <img className='w-full rounded-md h-full p-2 lg:p-0' src={doa} alt="" />
           </div>
-          <div className='bg-slate-800 rounded-md p-4 h-[400px]'>
+          <div className='bg-slate-800 rounded-md p-4 lg:h-[400px] mb-8 calculator'>
             <div className="form-control w-full">
               {
                 swap ?

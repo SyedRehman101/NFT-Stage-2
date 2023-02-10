@@ -148,3 +148,10 @@
 .igs-project-box:hover {
 	box-shadow: 0px 2px 8px 2px var(--dark);
 }
+
+@media (max-width: 576px) {
+	.section_head {
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+}

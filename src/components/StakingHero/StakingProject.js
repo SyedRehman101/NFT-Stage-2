@@ -17,14 +17,14 @@ const StakingProject = () => {
   const data = igos_projects.slice(0, numOfElement);
   return (
     <section className='staking-project py-20 relative'>
-      <div className="lg:max-w-screen-xl w-full mx-auto">
-        <div className="section_head flex justify-between items-end">
+      <div className="lg:max-w-screen-xl w-full mx-auto px-4">
+        <div className="section_head flex lg:justify-between justify-start lg:items-end items-start">
           <div className="content staking-heading">
             <span className='text-xl'>Laaverse</span>
             <h2 className='text-4xl font-bold text-base-100 mt-4'>Upcoming Staking</h2>
           </div>
 
-          <div className="flex items-center">
+          <div className="flex items-center lg:mt-0 mt-4">
             <button className='text-xl fond-bold text-base-100 pr-2'>View More</button>
             <FaArrowRight className='text-base-100 text-xl' />
           </div>
@@ -69,7 +69,7 @@ const StakingProject = () => {
                       <img className='w-8 h-full' src={item.icon} alt="" />
                     </div>
 
-                    <div className='flex justify-between py-8'>
+                    <div className='flex lg:justify-between py-8 flex-wrap gap-4'>
                       <button className='border-none btn btn-sm rounded-full bg-primary hover:text-base-100'>Total Rise {item.total_raise}K</button>
                       <button className='hover:text-base-100 border-none btn btn-sm rounded-full bg-primary'>Valu {item.valu}M</button>
                       <button className='hover:text-base-100 border-none btn btn-sm rounded-full bg-primary'>Min Allu ${item.min_allo}</button>
@@ -104,13 +104,13 @@ const StakingProject = () => {
         </div>
 
 
-        < div className="section_head flex justify-between items-end mt-8" >
+        < div className="section_head flex lg:justify-between justify-start lg:items-end items-start mt-8" >
           <div className="content staking-heading">
             <span className='text-xl'>Exclusive</span>
             <h2 className='text-4xl font-bold text-base-100 mt-4'>Previous Staking</h2>
           </div>
 
-          <div className="flex items-center">
+          <div className="flex items-center lg:mt-0 mt-4">
             <button className='text-xl fond-bold text-base-100 pr-2'>View More</button>
             <FaArrowRight className='text-base-100 text-xl' />
           </div>
@@ -121,8 +121,8 @@ const StakingProject = () => {
           {
             data.map(item => (
               <div className="igs-project-box p-6 rounded-3xl bg-primaryDark my-8 shadow-lg relative z-50 ease-in-out duration-200">
-                <div className="card_top flex justify-between items-center">
-                  <div className='flex items-center'>
+                <div className="card_top flex justify-between flex-wrap items-center">
+                  <div className='flex items-center mb-4'>
                     <img className='w-20 h-full rounded-lg' src={item.thumbnail} alt={item.title} />
                     <div className='pl-4'>
                       <h2 className='text-xl font-bold text-base-100'>{item.title}</h2>
@@ -150,7 +150,7 @@ const StakingProject = () => {
         <img src={lineBg} alt="" className='mark-img-line' />
 
         <div className='text-center loadmore mt-20'>
-          <button onClick={handleLoadMore} className='btn bg-primaryDark border-0 w-96'>Load More</button>
+          <button onClick={handleLoadMore} className='btn bg-primaryDark border-0 lg:w-96 w-40'>Load More</button>
         </div>
       </div>
     </section>

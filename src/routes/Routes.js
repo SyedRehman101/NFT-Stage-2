@@ -11,8 +11,6 @@ import NftToken from "../pages/Faq/NftToken";
 import Home from "../pages/Home/Home";
 import LandMap from "../pages/LandMap/LandMap";
 import NftMarketPage from "../pages/NftMarket/NftMarketPage";
-import PlayNow from "../pages/PlayNow/PlayNow";
-import RoadMap from "../pages/RoadMap/RoadMap";
 import Staking from "../pages/Staking/Staking";
 import Team from "../pages/Team/Team";
 

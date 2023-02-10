@@ -56,3 +56,20 @@
 	right: 120px;
 	top: 80px;
 }
+
+@media (max-width: 576px) {
+	.couter_list {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.couter-box:after {
+		content: none;
+	}
+
+	.couter-box {
+		margin-right: unset;
+		margin-bottom: 40px;
+	}
+}
