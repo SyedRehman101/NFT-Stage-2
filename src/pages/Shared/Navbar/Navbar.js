@@ -25,17 +25,15 @@ const Navbar = () => {
         <div className='main__navlinks hidden lg:block'>
           <Navlinks />
         </div>
-        {
-          pathname.includes('playnow') && <div className='flex items-center xl:gap-4 gap-2 text-pure font-semibold downloadBtnContainer'>
-            <div className='bg-primary cursor-pointer flex items-center justify-center rounded-md w-[20px] h-[20px] xl:block hidden'>
-              <img src={Bell} alt="bell" />
-            </div>
-            <NavLink to="/playnow" className="xl:text-md text-sm playNow uppercase">Play Now</NavLink>
-            <div className='bg-primary cursor-pointer xl:flex items-center justify-center px-[3px] rounded-md w-[20px] h-[20px] xl:block hidden'>
-              <img src={ArrowDown} alt="bell" />
-            </div>
+        <div className='flex items-center xl:gap-4 gap-2 text-pure font-semibold downloadBtnContainer'>
+          <div className='bg-primary cursor-pointer flex items-center justify-center rounded-md w-[20px] h-[20px] xl:block hidden'>
+            <img src={Bell} alt="bell" />
           </div>
-        }
+          <NavLink to="/playnow" className="xl:text-md text-sm playNow uppercase">Play Now</NavLink>
+          <div className='bg-primary cursor-pointer xl:flex items-center justify-center px-[3px] rounded-md w-[20px] h-[20px] xl:block hidden'>
+            <img src={ArrowDown} alt="bell" />
+          </div>
+        </div>
 
 
         <div className='home-large-connectWalletBtn bg-primaryG py-2 rounded-md text-center text-pure xl:px-6 hover:bg-primary hover:bg-opacity-59 cursor-pointer'>
