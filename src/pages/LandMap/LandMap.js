@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Draggable from 'react-draggable';
 import { TransformComponent, TransformWrapper } from 'react-zoom-pan-pinch';
 import BookedNftInfo from '../Shared/Modal/BookedNfInfo';
@@ -6,16 +6,11 @@ import BuyModal from '../Shared/Modal/BuyModal';
 import LandmapModal from '../Shared/Modal/LandmapModal';
 
 const LandMap = () => {
-  const gridNumber = 20161;
-
+  const gridNumber = 20000;
+  const ref = useRef();
   const [selectedBoxId, setSelectedBoxId] = useState("");
 
-  const [nftInfo, setNFTInfo] = useState({
-    name: "",
-    facebookLink: "",
-    twitterLink: "",
-    redditLink: ""
-  })
+
 
 
   useEffect(() => {
@@ -23,37 +18,45 @@ const LandMap = () => {
     let boxes = "";
 
     for (let i = 1; i < gridNumber; i++) {
-      boxes += '<button  name="btns" style="border-color:#4a0c5f" class="cursor-grab focus:bg-red-600 w-2 h-2 border-t-[0.5px] border-l-[0.5px] border-b-[0.5px] border-r-[0.5px]  flex-none" id="box-' + i + '"></button>'
+      boxes += '<button name="btns" style="border-color:#4a0c5f" class="cursor-grab focus:bg-red-600 w-2 h-2 border-t-[0.5px] border-l-[0.5px] border-b-[0.5px] border-r-[0.5px]  flex-none" id="box-' + i + '"></button>'
     }
 
-    document.getElementById('grid-box').innerHTML = boxes;
+    ref.current.innerHTML = boxes;
 
     const btns = [...document.getElementsByName("btns")];
 
+    const bookedmodal = document.getElementById("booked-nft-modal");
+    const modal = document.getElementById("modal");
 
-    btns.forEach((elem, index) => {
-      if (elem.id === "box-7274") {
-        elem.style.backgroundColor = "plum"
+    for (let i = 1; i < btns.length; i++) {
+      const date = new Date();
+
+      if (btns[i].id === "box-7274") {
+        btns[i].style.backgroundColor = "plum"
       }
-      elem.addEventListener('click', (e) => {
-        setSelectedBoxId(elem.id.split('-')[1])
+      btns[i].onclick = ((e) => {
+        console.log(date.getMilliseconds());
 
-        const modal = document.getElementById("modal");
-        const bookedmodal = document.getElementById("booked-nft-modal");
-        if (elem.id === "box-7274") {
+        setSelectedBoxId(btns[i].id)
 
-          bookedmodal.classList.remove('translate-x-96');
-          modal.classList.add('translate-x-96');
-        }
-        else {
-          const modal = document.getElementById("modal");
-
+        if (btns[i].id !== "box-7274") {
           modal.classList.remove('translate-x-96');
           bookedmodal.classList.add('translate-x-96');
-        }
 
+        }
+        else {
+          bookedmodal.classList.remove('translate-x-96');
+          modal.classList.add('translate-x-96');
+
+
+        }
       })
-    })
+
+
+
+    }
+
+
 
   }, [])
 
@@ -74,7 +77,7 @@ const LandMap = () => {
                       e.stopPropagation()
                     }}>
                       {/*Border-360 */}
-                      <div className="w-full border-1 border-gray-900 transition-all relative  duration-300 h-full flex flex-row flex-wrap bg-gray-900 cursor-grab overflow-hidden" id="grid-box" >
+                      <div ref={ref} className="w-full border-1 border-gray-900 transition-all relative  duration-300 h-full flex flex-row flex-wrap bg-gray-900 cursor-grab overflow-hidden" id="grid-box" >
                       </div>
 
                       {/* <AiOutlineDrag className='text-white' /> */}
@@ -105,7 +108,7 @@ const LandMap = () => {
       </div>
       <LandmapModal selectedBoxId={selectedBoxId}></LandmapModal>
       <BookedNftInfo />
-      <BuyModal nftInfo={nftInfo} />
+      <BuyModal />
     </>
   )
 };

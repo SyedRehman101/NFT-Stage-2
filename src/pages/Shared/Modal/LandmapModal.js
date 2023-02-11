@@ -19,7 +19,7 @@ const LandmapModal = (props) => {
       <br />
 
       <div className='flex'>
-        <h4 className='text-white text-base'>Serial Number:  {props.selectedBoxId}</h4>
+        <h4 className='text-white text-base'>Serial Number:  {props.selectedBoxId.split('-')[1]}</h4>
       </div>
       <br />
       <div className=' w-full flex gap-3'>
