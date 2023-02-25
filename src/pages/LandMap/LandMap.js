@@ -71,22 +71,43 @@ const LandMap = () => {
   // };
 
   useEffect(() => {
-    // const gridWidth = 100;
-    // const gridHeight = 78;
+    const gridWidth = 100;
+    const gridHeight = 78;
+    const position = { x: 0, y: 0 }
     interact(gridRef.current).draggable({
-      onmove: event => {
-        const target = event.target;
-        const x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx;
-        const y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
+      // onmove: event => {
+      //   const target = event.target;
+      //   const x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx;
+      //   const y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
 
 
-          target.style.webkitTransform = target.style.transform = 'translate(' + x + 'px, ' + y + 'px)';
-          target.setAttribute('data-x', x);
-          target.setAttribute('data-y', y);
+      //   target.style.webkitTransform = target.style.transform = 'translate(' + x + 'px, ' + y + 'px)';
+      //   target.setAttribute('data-x', x);
+      //   target.setAttribute('data-y', y);
+      // },
+      onmove: event=>{
+        position.x += event.dx * 0.335
+        position.y += event.dy * 0.335
+  //   const x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx;
+      //   const y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
+          event.target.style.transform = 'translate(' + position.x + 'px, ' + position.y + 'px)';
       },
       inertia: true,
-      
-    })
+      restrict: {
+        restriction: 'parent', // Restrict to the grid element
+        
+      }
+    }).on('dragmove', (event) => {
+      const { dx, dy } = event;
+      const x = event.target.offsetLeft + dx;
+      const y = event.target.offsetTop + dy;
+
+      // Restrict from completely leaving the viewport
+      if (x < 0) event.target.style.left = '0vw';
+      if (y < 0) event.target.style.top = '0vh';
+      if (x + gridWidth > window.innerWidth) event.target.style.left = window.innerWidth + 'vw';
+      if (y + gridHeight > window.innerHeight) event.target.style.top = window.innerHeight + 'vh';
+    });
 
 
 
@@ -217,10 +238,10 @@ const LandMap = () => {
                     }}>
           </Draggable> */}
 
-          <div  id="grid-container" className=" w-full h-[48rem] bg-gray-900 relative transition-all duration-300 flex" >
+          <div id="grid-container" className=" w-full h-[48rem] bg-gray-900 relative transition-all duration-300 flex p-4" >
 
             {/*Border-360 */}
-            <div ref={gridRef} className="w-full  border-1 border-gray-900 transition-all relative  duration-300 h-5/4 flex flex-row flex-wrap bg-gray-900 cursor-grab overflow-hidden" id="grid-box" >
+            <div ref={gridRef} data-y="0" data-x="0" className="w-full  border-1 border-gray-900 transition-all relative  duration-300 h-5/4 flex flex-row flex-wrap bg-gray-900 cursor-grab overflow-hidden" id="grid-box" >
             </div>
 
             {/* <div className='w-full'>
