@@ -238,7 +238,7 @@ const LandMap = () => {
                     }}>
           </Draggable> */}
 
-          <div id="grid-container" className=" w-full h-[48rem] bg-gray-900 relative transition-all duration-300 flex p-4" >
+          <div id="grid-container" className=" w-full h-[48rem] bg-[#45025e] relative transition-all duration-300 flex" >
 
             {/*Border-360 */}
             <div ref={gridRef} data-y="0" data-x="0" className="w-full  border-1 border-gray-900 transition-all relative  duration-300 h-5/4 flex flex-row flex-wrap bg-gray-900 cursor-grab overflow-hidden" id="grid-box" >

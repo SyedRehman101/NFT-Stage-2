@@ -69,6 +69,7 @@ body {
 #grid-container{
 	-ms-overflow-style: none !important; /* IE and Edge */
 	scrollbar-width: none !important; /* Firefox */
+	
 }
 
 #grid-container::-webkit-scrollbar {
@@ -90,3 +91,6 @@ body {
 	width: 0 !important;
 	height: 0 !important;
   }
+
+
+  
