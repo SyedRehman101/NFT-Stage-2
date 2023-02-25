@@ -64,3 +64,29 @@ body {
 		overflow-x: hidden;
 	}
 }
+
+
+#grid-container{
+	-ms-overflow-style: none !important; /* IE and Edge */
+	scrollbar-width: none !important; /* Firefox */
+}
+
+#grid-container::-webkit-scrollbar {
+	display: none !important;
+}
+
+#fixed-grid{
+	-ms-overflow-style: none !important; /* IE and Edge */
+	scrollbar-width: none !important; /* Firefox */
+}
+
+#fixed-grid::-webkit-scrollbar {
+	display: none !important;
+}
+
+
+
+::-webkit-scrollbar {
+	width: 0 !important;
+	height: 0 !important;
+  }
